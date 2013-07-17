@@ -1,0 +1,14 @@
+<h2>User's Index</h2>
+
+<% @users.each do |user| %>
+<ul>
+  <li>
+    <%= user.username %>
+    <% if @current_user == user %>
+      <% unless user.session_token.nil? %>
+        <%= button_to "Sign Out", session_url, method: :delete %>
+      <% end %>
+    <% end %>
+  </li>
+</ul>
+<% end %>

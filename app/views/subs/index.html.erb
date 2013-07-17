@@ -1,0 +1,14 @@
+<h2>All Subs</h2>
+
+<ul>
+  <% @subs.each do |sub| %>
+  <li>
+    <%= link_to "#{sub.name}", sub_url(sub.id) %>
+    <%= @current_user.id %>
+    <%= sub.user_id %>
+    <% if @current_user.id == sub.user_id %>
+      <%= button_to "Edit", sub_url(sub.id)%>
+    <% end %>
+  </li>
+  <%end%>
+</ul>

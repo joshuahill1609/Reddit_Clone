@@ -1,0 +1,11 @@
+<h1> <%= @sub.name %></h1>
+<h3> Links <h3>
+  <ul>
+  <% @links.each do |link| %>
+  <% if link.sub_ids.include?(@sub.id) %>
+    <li><%= link_to link.title, link_url(link.id) %></li>
+  <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "Submit Link", new_link_url %>

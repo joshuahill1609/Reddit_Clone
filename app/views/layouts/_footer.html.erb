@@ -1,0 +1,7 @@
+
+<br><br><br><br>
+<%= link_to "View Users", users_url %>
+<%= link_to "View Subs", subs_url %>
+<% unless current_user.nil?%>
+  <%= link_to "My Profile", user_url(current_user.id) %>
+<% end %>
