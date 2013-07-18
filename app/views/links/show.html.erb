@@ -2,3 +2,6 @@
 
 <h4><%= @link.url %></h4>
 
+<% if current_user.id == @link.user_id %>
+<%= button_to "Edit", edit_link_url(@link) %>
+<% end %>

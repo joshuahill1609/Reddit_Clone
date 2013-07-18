@@ -4,7 +4,7 @@
 <%end %>
 <form action="/subs" method="post">
   <input type="hidden" name="sub[user_id]" value="<%= @current_user.id %>">
-  <%= params %>
+
   <label for="sub_name">Sub Name</label>
   <input id="sub_name" type="text" name="sub[name]" value="<%= @sub.name %>">
   <h3>Links</h3>
