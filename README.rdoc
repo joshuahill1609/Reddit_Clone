@@ -4,4 +4,5 @@ A lite version of Reddit with Links, Comments, and Nested Comments.
 
 == ToDo
 
-Add Up Votes, Karma.
+* Add Up Votes 
+* Karma
