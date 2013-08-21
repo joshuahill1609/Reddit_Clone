@@ -1,3 +1,7 @@
 == Reddit Clone
 
-Add links, Post Comments, Nested Comments.
+A lite version of Reddit with Links, Comments, and Nested Comments. 
+
+== ToDo
+
+Add Up Votes, Karma.
